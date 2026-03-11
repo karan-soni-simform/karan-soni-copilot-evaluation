@@ -22,7 +22,7 @@ Generated entire code using claude opus 4.5 and usage was increased by around 5-
 
 ## Additional Notes
 
-As per the ideal situation i first of all asked for reviewing existing structure and suggest changes as per the feature i required. Then i counter replied and got changes to which i went through each one of them, then asked for updating and removing few code blocks as per my requirement.Then verfied those and as per new changes gave some new prompts for validation and logger.
+As per the ideal situation i first of all asked for reviewing existing structure and suggest changes as per the feature i required. Then i counter replied and got changes to which i went through each one of them, then asked for updating and removing few code blocks as per my requirement.Then verfied those and as per new changes gave some new prompts for validation and logger.Atlast again verified the api for logger.
 
 ## Submission Checklist
 

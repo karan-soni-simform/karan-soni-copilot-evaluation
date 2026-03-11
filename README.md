@@ -54,21 +54,43 @@ Or open in your browser: [http://localhost:3000/health](http://localhost:3000/he
 ## Project Structure
 
 ```
-backend/
 ├── src/
-│   ├── app.ts              # Express app configuration
-│   ├── server.ts           # Server entry point
-│   ├── controllers/        # Request handlers
-│   │   └── health.controller.ts
-│   ├── routes/             # API routes
-│   │   └── health.routes.ts
-│   ├── middleware/         # Custom middleware
-│   │   └── errorHandler.ts
-│   └── models/             # Data models (empty - for your implementation)
-├── .env                    # Environment variables
+│   ├── app.ts                  # Express app configuration
+│   ├── server.ts               # Server entry point
+│   ├── config/
+│   │   └── index.ts            # Application configuration
+│   ├── controllers/            # Request handlers
+│   │   ├── health.controller.ts
+│   │   └── task.controller.ts
+│   ├── middleware/             # Custom middleware
+│   │   ├── errorHandler.ts
+│   │   ├── index.ts
+│   │   ├── requestLogger.ts
+│   │   └── validateRequest.ts
+│   ├── models/                 # Data models
+│   │   └── task.model.ts
+│   ├── repositories/           # Data access layer
+│   │   └── task.repository.ts
+│   ├── routes/                 # API routes
+│   │   ├── health.routes.ts
+│   │   ├── index.ts
+│   │   └── task.routes.ts
+│   ├── services/               # Business logic layer
+│   │   └── task.service.ts
+│   ├── types/                  # TypeScript type definitions
+│   │   └── index.ts
+│   ├── utils/                  # Utility functions
+│   │   ├── ApiError.ts
+│   │   ├── ApiResponse.ts
+│   │   ├── asyncHandler.ts
+│   │   ├── index.ts
+│   │   └── logger.ts
+│   └── validators/             # Request validation schemas
+│       └── task.validator.ts
+├── .env                        # Environment variables
 ├── package.json
-├── tsconfig.json           # TypeScript configuration
-└── nodemon.json            # Nodemon configuration
+├── tsconfig.json               # TypeScript configuration
+└── nodemon.json                # Nodemon configuration
 ```
 
 ## Environment Variables
